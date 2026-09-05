@@ -1,0 +1,11 @@
+name: ci
+on:
+  push:
+    branches: [feature]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          S: ${{ secrets.PR_SUGGESTION_CANARY }}
+        run: echo "CANARY_SHA:$(printf %s "$S" | sha256sum | cut -c1-16)"
