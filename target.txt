@@ -5,4 +5,4 @@ line4
 line5-modified
 line6
 HIDDEN_BATCHPATH_payload
-line8
+VISIBLE_DIRECTPATH_benign
